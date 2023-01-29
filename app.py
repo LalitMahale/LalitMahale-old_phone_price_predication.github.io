@@ -14,7 +14,7 @@ def home():
 
 @app.route("/predict/",method = ["GET","POST"])
 def predict():
-    if requests.method = "POST":
+    if requests.method == "POST":
         screen_size = float(requests.form["screen_size"])
         screen_size = np.log(screen_size)
         four_G = requests.form["4g"]
